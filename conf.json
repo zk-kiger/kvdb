@@ -1,0 +1,8 @@
+{
+  "local": {
+    "id": "raft-id",
+    "http_addr": "raft-cluster-host:8081",
+    "raft_addr": "raft-cluster-host:8089",
+    "raft_dir": "bin/kvdb"
+  }
+}
