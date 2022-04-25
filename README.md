@@ -8,7 +8,7 @@ go mod download
 ```
 2.通过 docker 来模拟集群情况,需要执行 Dockerfile 构建镜像.
 ```
-在 kvdb 目录下执行
+# 在 kvdb 目录下执行
 docker build -t kvdb:v1.0 .
 ```
 
@@ -63,5 +63,6 @@ curl -X DELETE 172.17.0.3:8081/key/foo -L
 
 # 你可能会遇到的问题
 1.进入容器,vi conf.json 可以看到当前节点对外使用的 ip:port.
+
 2.Mac 可能 ping 不通容器,可以参考: https://www.haoyizebo.com/posts/fd0b9bd8/
 通过 docker-connector 来解决网桥问题.
